@@ -1,0 +1,16 @@
+
+    <html><head><title>Vulnerability Report</title>
+    <style>
+    body { font-family: Arial; margin: 40px; }
+    h1 { color: #222; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    .Critical { background: #ffcccc; }
+    .High { background: #ffe0b3; }
+    .Medium { background: #fff5cc; }
+    </style></head><body>
+    <h1>Vulnerability Assessment Report</h1>
+    <p><b>Target:</b> 192.168.56.101<br><b>Date:</b> 2026-10-02 04:48</p>
+    <table>
+    <tr><th>Severity</th><th>Port</th><th>Service</th><th>Issue</th><th>CVE</th></tr>
+    <tr class='Critical'><td>Critical</td><td>21</td><td>ftp vsftpd 2.3.4</td><td>Backdoor command execution</td><td>CVE-2011-2523</td></tr><tr class='Medium'><td>Medium</td><td>22</td><td>ssh OpenSSH 4.7p1 Debian 8ubuntu1</td><td>Weak encryption / outdated SSH</td><td>CVE-2008-5161</td></tr><tr class='Medium'><td>Medium</td><td>53</td><td>domain ISC BIND 9.4.2</td><td>Outdated DNS server, known DoS/cache poisoning issues</td><td>Multiple</td></tr><tr class='High'><td>High</td><td>80</td><td>http Apache httpd 2.2.8</td><td>Outdated Apache, several known CVEs</td><td>Multiple</td></tr><tr class='Critical'><td>Critical</td><td>139</td><td>netbios-ssn Samba smbd 3.X - 4.X</td><td>Usermap_script remote command execution</td><td>CVE-2007-2447</td></tr><tr class='Critical'><td>Critical</td><td>445</td><td>netbios-ssn Samba smbd 3.X - 4.X</td><td>Usermap_script remote command execution</td><td>CVE-2007-2447</td></tr></table></body></html>
